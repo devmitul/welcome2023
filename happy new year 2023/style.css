@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Archivo+Black);
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+ background: rgb(255, 255, 255);
+background: radial-gradient(circle, rgb(226, 53, 14) 50%, rgb(71, 18, 215) 30%, rgba(241,91,181) 70%);
+animation: gradient 5s reverse infinite;
+}
+
+.main {
+  text-align: center;
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(150deg, rgba(155,93,229,1) 0%, rgba(241,91,181,1) 20%, rgba(254,228,64,1) 40%, rgba(0,187,249,1) 60%, rgba(0,245,212,1) 80%) 60% 60%;
+}
+
+h1 {
+  font-size: 10rem;
+  font-family: "Archivo Black";
+  background: rgb(155,93,229);
+  background: linear-gradient(150deg, rgba(155,93,229,1) 0%, rgba(241,91,181,1) 20%, rgba(254,228,64,1) 40%, rgba(0,187,249,1) 60%, rgba(0,245,212,1) 80%);
+  background-size: 20% 20%;
+  background-color: #840b2a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 5s linear infinite;
+}
+
+h2 {
+  font-family: "Roboto";
+  letter-spacing: 15px;
+  position: relative;
+  top: -100px;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 50% 50%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
+}
